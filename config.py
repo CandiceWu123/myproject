@@ -38,6 +38,7 @@ def setup(ex):
         if not on_cloud:
             tqdm = True
 
+        test_shot = 20
         shot = 20                      # int, number of support samples per episode
         split = 0                       # int, split number [0, 1, 2, 3], required
         seed = 1234                     # int, training set random seed, fixed for reproducibility
