@@ -4,6 +4,7 @@ import random
 import shutil
 from pathlib import Path
 import tarfile
+import math
 
 import numpy as np
 import torch
@@ -32,6 +33,7 @@ def setup(ex):
         mongodb = False                 # bool, enable MongoDB observer
         mongo_host = 'localhost'        # str, MongoDB host
         mongo_port = 7000               # int, MongoDB port
+        test_epoch = 200
 
         print_interval = 200            # print interval, by iteration
         tqdm = False                    # bool, only enable tqdm in an interactive terminal
